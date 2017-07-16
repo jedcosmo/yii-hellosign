@@ -1,0 +1,37 @@
+
+
+# prevent directory listings
+Options -Indexes
+# follow symbolic links
+Options FollowSymlinks
+RewriteEngine on
+
+#RewriteCond %{REQUEST_URI} ^/admin/$
+#RewriteRule ^(admin)/$ /$1 [R=301,L]
+#RewriteCond %{REQUEST_URI} ^/admin
+#RewriteRule ^admin(/.+)?$ /x30-production/backend/web/$1 [L,PT]
+
+#RewriteCond %{REQUEST_URI} ^.*$
+
+
+
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+   RewriteBase /
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteRule ^(.+)$ /index.php/$1 [L,QSA]
+   RewriteRule ^(.*)$ /backend/web/$1
+</IfModule>
+
+<IfModule mod_php5.c>
+        php_value date.timezone 'US/Central'
+        php_value short_open_tag 1
+        php_value max_execution_time 3000
+        php_value post_max_size 60M
+        php_value upload_max_filesize 30M
+        php_value memory_limit 1280M
+        php_value max_input_time 3000
+        php_value session.cookie_lifetime 12000
+    php_value session.gc_maxlifetime 12000
+</IfModule>

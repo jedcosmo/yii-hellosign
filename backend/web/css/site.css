@@ -1,0 +1,156 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+/*
+table td{word-wrap: break-word;}
+*/
+/*table td{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}*/
+
+.dashboardDiv{height:200px;overflow-y:auto;overflow-x:hidden;margin-bottom:20px;}
+.dashboardTblHead{ background-color:#D3D3D3/*#0D69A3*/; color:#333333; font-weight:bold; border:1px solid #000000!important;}
+.dashboardDivBig{height:620px;overflow-y:scroll;overflow-x:hidden;}
+.dsbtbl td{ border:1px solid #000000!important;}
+.dsbtblchild td{ border:1px solid #CCCCCC!important;}
+
+.activity-log-view { overflow-x: auto;}
+
+@media screen and (max-width:992px){
+	#myModalBig .modal-dialog{ width:100% !important; }
+}
+@media screen and (max-width:767px){
+	.col-sm-5.text-left{ padding:0px; margin:10px 0px;}
+
+}
+@media screen and (max-width:640px){
+	.tbl{ overflow-x:auto;}
+	.custm-tbl{ margin:0px;}
+	.custm-tbl .col-sm-12{ padding:0px;}
+	.content-header > .breadcrumb{ margin-left:-10px; margin-bottom:10px !important;}
+	.content-header>h1{ font-size:20px !important;}
+	.skin-black .content-header br{ display:none;}
+}
+@media screen and (max-width:414px){
+	#custMyTab li{ width:100%; margin-bottom:1px;}
+	.btn{ width:100%; margin:0px 0px 1px 0px; text-align:left;}
+}
+@media screen and (max-width:375px){
+	.myTab .text-right .btn{ width:100%;}
+}
+
+/****** CSS for loader until page loads completely****************************/
+#overlayLoad{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgba(0,0,0,0.9);
+  transition: 1s 0.4s;
+  opacity:0.8;
+  vertical-align:middle;
+  padding-top:150px;
+  color:#FFFFFF;
+}
+
+/****************************************************************************/

@@ -1,0 +1,23 @@
+Message-ID: <62bf803f34a328a2d490afd908b83100@192.168.33.10>
+Date: Mon, 10 Jul 2017 22:13:13 -0500
+Subject: Message subject
+From: noreply@mindts.com
+To: jerome@xerosoft.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1499742793_9183d52d121b08a2e5adefff8ee2a5ef_=_"
+
+
+--_=_swift_v4_1499742793_9183d52d121b08a2e5adefff8ee2a5ef_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Plain text content
+
+--_=_swift_v4_1499742793_9183d52d121b08a2e5adefff8ee2a5ef_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<b>HTML content</b>
+
+--_=_swift_v4_1499742793_9183d52d121b08a2e5adefff8ee2a5ef_=_--
